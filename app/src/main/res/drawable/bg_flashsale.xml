@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Màu nền cho vùng vòng cung -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+        </shape>
+    </item>
+
+    <item
+        >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_500"/>
+            <corners android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:bottomLeftRadius="16dp"
+                android:bottomRightRadius="16dp"/>
+        </shape>
+    </item>
+
+</layer-list>

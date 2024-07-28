@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="18dp"
+    android:height="19dp"
+    android:viewportWidth="18"
+    android:viewportHeight="19">
+
+  <!-- Path for the search icon -->
+  <path
+      android:pathData="M8.806,8.806m-7.49,0a7.49,7.49 0,1 1,14.981 0a7.49,7.49 0,1 1,-14.981 0"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:strokeColor="#212121"
+      android:strokeLineCap="round"
+      android:fillColor="@android:color/transparent" />
+
+  <!-- Path for the magnifying glass -->
+  <path
+      android:pathData="M14.016,14.404L16.952,17.333Z"
+      android:fillColor="#D12525"
+      android:fillType="evenOdd" />
+
+  <!-- Stroke for the magnifying glass -->
+  <path
+      android:pathData="M14.016,14.404L16.952,17.333"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:strokeColor="#212121"
+      android:strokeLineCap="round"
+      android:fillColor="@android:color/transparent" />
+</vector>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OnboardingFragment3"
+    android:orientation="vertical"
+    android:padding="24sp"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_gravity="center"
+        android:src="@drawable/onboarding3"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kidom có đa dạng\n đồ chơi cho các bé"
+        android:textSize="32sp"
+        android:fontFamily="@font/baloopaaji2semibold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:lineSpacingMultiplier="0.8"/>
+
+</LinearLayout>

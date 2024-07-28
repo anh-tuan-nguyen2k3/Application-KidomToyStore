@@ -1,0 +1,32 @@
+<!-- custom_snackbar_layout.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_snackbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/greyscale_400"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:fontFamily="@font/baloopaaji2medium"
+        android:text="Ba mẹ có chắc xoá sản phẩm này?"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtUndo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloopaaji2bold"
+        android:textSize="18sp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/primary_500"
+        android:text="Hoàn tác"/>
+
+</LinearLayout>

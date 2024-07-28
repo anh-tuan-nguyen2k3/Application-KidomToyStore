@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:layout_margin="24dp"
+    android:background="@drawable/alert_dialog_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email chưa được xác thực"
+        android:fontFamily="@font/baloopaaji2bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyscale_500"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email của ba mẹ chưa được xác thực. Ba mẹ vui lòng xác thực email để Đăng nhập."
+        android:textColor="@color/black"
+        android:fontFamily="@font/baloopaaji2regular"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tiếp tục"
+        android:textSize="15sp"
+        android:fontFamily="@font/baloopaaji2bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@null"
+        android:background="@drawable/button_available"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

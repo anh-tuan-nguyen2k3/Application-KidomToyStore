@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_dialog_corner"
+    android:orientation="vertical"
+    android:padding="24sp"
+    android:layout_margin="24sp">
+
+    <ImageView
+        android:id="@+id/imvDgIcon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_account_setup"/>
+
+    <TextView
+        android:id="@+id/dgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chúc mừng!"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baloopaaji2bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtDialogText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sample text"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/baloopaaji2regular"
+        android:gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24sp"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+        android:visibility="gone"/>
+
+</LinearLayout>

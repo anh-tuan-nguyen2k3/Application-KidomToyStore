@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="24dp">
+
+    <ImageView
+        android:id="@+id/imvReviewAccountImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/profile_photo_woman"/>
+
+    <TextView
+        android:id="@+id/txtReviewerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nguyễn Anh Tuấn"
+        android:fontFamily="@font/baloopaaji2semibold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:layout_toEndOf="@+id/imvReviewAccountImage"/>
+
+    <TextView
+        android:id="@+id/txtReviewDatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imvReviewAccountImage"
+        android:layout_below="@+id/txtReviewerName"
+        android:text="23-04-2024"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/baloopaaji2medium"
+        android:textColor="@color/greyscale_700"
+        android:gravity="end"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_red"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/red_star"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtRateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:textColor="@color/primary_500"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtReviewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imvReviewAccountImage"
+        android:layout_marginTop="12dp"
+        android:text="Kiddy Clay là sự lựa chọn tuyệt vời để giúp trẻ em phát triển sự sáng tạo của họ với 24 màu sắc đa dạng. 💯💯💯"
+        android:textSize="16sp"
+        android:fontFamily="@font/baloopaaji2regular"
+        android:textColor="@color/greyscale_900" />
+
+    <ImageView
+        android:id="@+id/imvReviewImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/txtReviewContent"
+        android:src="@drawable/ic_logo"
+        android:layout_marginTop="12sp"/>
+
+</RelativeLayout>

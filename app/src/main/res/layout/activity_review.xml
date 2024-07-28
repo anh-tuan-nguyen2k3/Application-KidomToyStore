@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ReviewActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbReview"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:text="Viết đánh giá"
+            android:layout_gravity="center"
+            android:textColor="@color/greyscale_900"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/containerReview"
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbReview"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+        <!--cardview sản phẩm-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:elevation="15dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewDetail"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:elevation="2dp"
+                    app:cardCornerRadius="20dp">
+                    <ImageView
+                        android:id="@+id/imvReviewThumb"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@color/greyscale_300" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtReviewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/baloopaaji2bold"
+                        android:text="Tên sản phẩm"
+                        android:textColor="@color/greyscale_900"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txtReviewQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/baloopaaji2medium"
+                        android:text="Số lượng: "
+                        android:textColor="@color/greyscale_700"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtReviewPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/baloopaaji2bold"
+                        android:gravity="start"
+                        android:text="đ180.000"
+                        android:textColor="@color/primary_500"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtHowOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloopaaji2bold"
+                android:gravity="center"
+                android:text="Đơn hàng của ba mẹ như thế nào?"
+                android:textColor="@color/greyscale_900"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtLeaveReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/baloopaaji2medium"
+                android:gravity="center"
+                android:text="Hãy để lại đánh giá và nhận xét của ba mẹ nhé!"
+                android:textColor="@color/greyscale_700"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/txtHowOrder"/>
+
+            <RatingBar
+                android:id="@+id/rtbReviewRating"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginVertical="15dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:progressDrawable="@drawable/custom_star"
+                android:rating="4"
+                android:stepSize="0.5"
+                app:layout_constraintTop_toBottomOf="@+id/txtLeaveReview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_field_chosen"
+                app:layout_constraintTop_toBottomOf="@id/rtbReviewRating"
+                android:layout_marginTop="15dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtReview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloopaaji2semibold"
+                    android:hint="Hãy chia sẻ nhận xét cho sản phẩm này nhé!"
+                    android:textColor="@color/greyscale_900"
+                    android:textColorHint="@color/greyscale_500"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toStartOf="@id/btnUpLoad"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="10dp"/>
+
+                <ImageButton
+                    android:id="@+id/btnUpLoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/upload_img"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/edtReview" />
+
+                <ImageView
+                    android:id="@+id/imvReviewImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:layout_constraintStart_toStartOf="@id/edtReview"
+                    app:layout_constraintTop_toBottomOf="@id/edtReview"
+                    app:layout_constraintBottom_toTopOf="@id/bottomGuideline"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                 android:scaleType="centerCrop" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/bottomGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/containerReview"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_unselected_light_red"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_500"
+            android:textSize="19sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSend"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_orange"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:text="Gửi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

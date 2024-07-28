@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    <!-- Đặt chiều rộng và màu sắc của đường nét -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/greyscale_500" />
+
+    <!-- Thiết lập đường nét đứt -->
+    <stroke
+        android:width="1dp"
+        android:color="@color/greyscale_500"
+        android:dashWidth="5dp"
+        android:dashGap="5dp" /> <!-- Khoảng cách giữa các đường nét -->
+
+</shape>

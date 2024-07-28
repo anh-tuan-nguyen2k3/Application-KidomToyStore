@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="900dp"
+        android:layout_height="434dp"
+        android:layout_gravity="center"
+        android:src="@drawable/onboarding2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp">
+
+        <TextView
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:lineSpacingMultiplier="0.6"
+            android:text="Chào mừng
+            ba mẹ đến với"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/ic_wavinghand" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="98dp"
+        android:src="@drawable/logo_kidom"
+        android:layout_gravity="left"
+        android:paddingLeft="24dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="Cửa hàng mua sắm đồ chơi uy tín và chất lượng bậc nhất Việt Nam!"
+        android:textSize="18sp"
+        android:fontFamily="@font/baloopaaji2semibold"
+        android:lineSpacingMultiplier="0.7"
+        android:textColor="@color/greyscale_800"/>
+
+</LinearLayout>

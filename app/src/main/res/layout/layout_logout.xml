@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LogoutActivity"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="38dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@color/greyscale_300"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Đăng xuất"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:fontFamily="@font/baloopaaji2bold"
+        android:textColor="@color/error"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Bạn có chắc chắn muốn đăng xuất?"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:fontFamily="@font/baloopaaji2bold"
+        android:textColor="@color/greyscale_900"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="18dp">
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Hủy"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_500"
+            android:background="@drawable/button_available"
+            android:backgroundTint="@color/primary_100"/>
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_marginStart="10dp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Xác nhận"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_available"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

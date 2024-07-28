@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TabItemText" parent="Widget.Design.TabLayout">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/baloopaaji2medium</item>
+    </style>
+    <dimen name="max_image_size">100dp</dimen>
+    <style name="Style_TextView">
+        <item name="fontFamily">@font/baloopaaji2medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="MyCustomCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="fontFamily">@font/baloopaaji2medium</item>
+    </style>
+</resources>

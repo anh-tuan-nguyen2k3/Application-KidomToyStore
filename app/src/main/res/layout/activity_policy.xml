@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PolicyActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbPolicy"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:text="Chính sách và quyền riêng tư"
+            android:textColor="@color/greyscale_900"
+            android:textSize="24sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- ScrollView containing the content -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tbPolicy">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Content inside the ScrollView -->
+            <LinearLayout
+                android:id="@+id/plc1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical"
+                android:padding="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloopaaji2bold"
+                    android:text="1. Quy định về bảo mật thông tin"
+                    android:textColor="@color/greyscale_900"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/baloopaaji2regular"
+                    android:text="Kidom luôn coi trọng việc bảo mật thông tin và cam kết sẽ sử dụng mọi biện pháp tốt nhất nhằm bảo vệ thông tin bạn đã cung cấp cho chúng tôi. &#10;&#10;Ở một mặt khác, bạn hoàn toàn có thể truy cập vào website và trình duyệt mà không cần phải cung cấp chi tiết cá nhân. Thông tin của bạn, nếu có, cũng đều sẽ được mã hóa để đảm bảo an toàn trong suốt quá trình giao dịch tại website Kidom. Riêng trường hợp được cơ quan pháp luật yêu cầu, chúng tôi sẽ buộc phải cung cấp những thông tin này cho các cơ quan pháp luật. &#10;&#10;Kidom tuân thủ các biện pháp đảm bảo an toàn/ bảo mật thông tin tài khoản thanh toán cá nhân theo quy định của pháp luật cũng như các quy định và các khuyến nghị về giám sát của Ngân hàng Nhà nước."
+                    android:textColor="@color/greyscale_900"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plc2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical"
+                android:padding="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plc1"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloopaaji2bold"
+                    android:text="2. Chính sách khuyến mãi"
+                    android:textColor="@color/greyscale_900"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Với mong muốn giúp bạn có những trải nghiệm mua sắm tốt nhất, Kidom sẽ áp dụng một số chính sách khuyến mãi cố định hoặc tùy thời điểm về phí giao hàng, quà tặng và ưu đãi đặc biệt. Hãy cập nhật thường xuyên để biết thêm chi tiết bạn nhé!"
+                    android:fontFamily="@font/baloopaaji2regular"
+                    android:textColor="@color/greyscale_900"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/plc3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="vertical"
+                android:padding="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plc2"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloopaaji2bold"
+                    android:text="3. Bảo hành và đổi trả "
+                    android:textColor="@color/greyscale_900"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/baloopaaji2regular"
+                    android:text="Kidom luôn coi trọng việc bảo mật thông tin và cam kết sẽ sử dụng mọi biện pháp tốt nhất nhằm bảo vệ thông tin bạn đã cung cấp cho chúng tôi. &#10;&#10;Ở một mặt khác, bạn hoàn toàn có thể truy cập vào website và trình duyệt mà không cần phải cung cấp chi tiết cá nhân. Thông tin của bạn, nếu có, cũng đều sẽ được mã hóa để đảm bảo an toàn trong suốt quá trình giao dịch tại website Kidom. Riêng trường hợp được cơ quan pháp luật yêu cầu, chúng tôi sẽ buộc phải cung cấp những thông tin này cho các cơ quan pháp luật. &#10;&#10;Kidom tuân thủ các biện pháp đảm bảo an toàn/ bảo mật thông tin tài khoản thanh toán cá nhân theo quy định của pháp luật cũng như các quy định và các khuyến nghị về giám sát của Ngân hàng Nhà nước."
+                    android:textColor="@color/greyscale_900"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

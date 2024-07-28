@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/primary_500</item>
+        <!--selected Item color-->
+        <item name="colorControlActivated">@color/primary_500</item>
+        <item name="colorControlHighlight">@color/primary_500</item>
+        <!-- Ok Cancel Color-->
+        <item name="android:textColor">@color/primary_500</item>
+        <!-- Week TextColor-->
+        <item name="android:textColorSecondary">@color/black</item>
+        <!-- Calender Number color arrow color (< >) -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--day , month-->
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <!-- year-->
+        <item name="android:textColorSecondaryInverse">@color/greyscale_100</item>
+        <item name="android:dialogCornerRadius">40dp</item>
+        <item name="android:fontFamily">@font/baloopaaji2medium</item>
+    </style>
+</resources>

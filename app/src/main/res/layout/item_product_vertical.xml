@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="24dp"
+    android:gravity="center"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25sp"
+        android:outlineProvider="none"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="4dp"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_grey"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/imvProductThumb"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:padding="10dp"
+                android:src="@drawable/img_category_hoatrang"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bộ đồ chơi Kendama"
+                android:textSize="14sp"
+                android:fontFamily="@font/baloopaaji2bold"
+                android:textColor="@color/black"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star"
+                    />
+                <TextView
+                    android:id="@+id/txtStarNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.8"
+                    android:fontFamily="@font/baloopaaji2medium"
+                    android:textSize="14sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"/>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="|"-->
+<!--                    android:fontFamily="@font/baloopaaji2medium"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:layout_marginStart="12dp"/>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:background="@drawable/button_border_new"
+                    android:layout_marginStart="12sp"
+
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Đã bán"
+                        android:fontFamily="@font/baloopaaji2semibold"
+                        android:textColor="@color/primary_500"
+                        android:textSize="8sp"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <TextView
+                        android:id="@+id/txtSoldNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1234"
+                        android:fontFamily="@font/baloopaaji2semibold"
+                        android:textColor="@color/primary_500"
+                        android:textSize="8sp"
+                        android:layout_marginStart="4dp"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="182000đ"
+                    android:fontFamily="@font/baloopaaji2semibold"
+                    android:textSize="18dp"
+                    android:textColor="@color/primary_500"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtSalePercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_sale"
+                    android:fontFamily="@font/baloopaaji2semibold"
+                    android:gravity="center"
+                    android:text="-28%"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:padding="4dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

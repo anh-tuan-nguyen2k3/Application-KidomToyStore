@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="product_colors">
+        <item>@color/fs1</item>
+        <item>@color/fs2</item>
+        <item>@color/fs3</item>
+        <item>@color/fs4</item>
+        <!-- Thêm các màu khác nếu cần -->
+    </array>
+
+</resources>

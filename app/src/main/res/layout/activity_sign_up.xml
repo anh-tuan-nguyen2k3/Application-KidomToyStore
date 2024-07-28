@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUpActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký tài khoản"
+            android:textSize="24sp"
+            android:textColor="@color/greyscale_900"
+            android:fontFamily="@font/baloopaaji2bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:focusable="false">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imvAvatar"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_avatar"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            android:layout_gravity="center_vertical"
+            app:strokeColor="@color/primary_500"/>
+        <ImageView
+            android:id="@+id/imvButtonEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_edit_v2"
+            android:layout_gravity="bottom|end"
+            android:scaleType="fitXY"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:paddingBottom="24dp">
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_field"
+            android:hint="Họ và tên"
+            android:fontFamily="@font/baloopaaji2regular"
+            android:textSize="19sp"
+            android:paddingStart="20dp"
+            android:textColorHint="@color/greyscale_500"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_field"
+            android:hint="@string/str_phone"
+            android:fontFamily="@font/baloopaaji2regular"
+            android:textSize="19sp"
+            android:paddingStart="20dp"
+            android:textColorHint="@color/greyscale_500"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_field"
+            android:hint="@string/str_email"
+            android:fontFamily="@font/baloopaaji2regular"
+            android:textSize="19sp"
+            android:paddingStart="20dp"
+            android:textColorHint="@color/greyscale_500"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/edtDOB"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_field"
+            android:hint="Ngày sinh"
+            android:fontFamily="@font/baloopaaji2regular"
+            android:textSize="19sp"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="@color/greyscale_500"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:inputType="date"
+            android:focusable="false"
+            android:drawableRight="@drawable/ic_calendar"
+            android:drawableTint="@color/greyscale_500" />
+
+
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:theme="@style/mySpinnerItemStyle"
+            android:background="@drawable/input_field"
+            android:paddingStart="20dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@drawable/input_field"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@null"
+            android:background="@drawable/button_disable"
+            android:text="Tiếp tục"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:fontFamily="@font/baloopaaji2bold"
+            android:layout_gravity="center_horizontal|center"/>
+    </LinearLayout>
+</LinearLayout>
